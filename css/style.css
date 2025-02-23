@@ -1,0 +1,506 @@
+:root {
+    --bg-color: #121212;
+    --first-color: #f5f5f5;
+    --second-color: #a6a6a6;
+    --third-color: #CA82F8;
+    --fourth-color: #121212;
+    --fifth-color: #3d3d3d;
+    --six: #fff;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Karla", Arial, sans-serif;
+    line-height: 1.8;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--bg-color);
+    /* direction: rtl; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--first-color);
+    font-family: "Playfair Display", Georgia, serif;
+    margin: 0 0 30px 0;
+}
+
+.about,
+.skills,
+.experience,
+.gallery {
+    padding: 10em 0 0;
+    clear: both;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+.bold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 250px;
+    color: rgba(240, 240, 240, 0.01);
+    font-weight: 700;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {}
+
+.btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-size: 13px !important;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    padding: 8px 20px;
+}
+
+.btn.btn-md {
+    padding: 8px 20px !important;
+}
+
+.btn.btn-lg {
+    padding: 18px 36px !important;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn-primary {
+    background: #ca82f8;
+    color: var(--fourth-color);
+    border: 2px solid #ca82f8;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background: #d49af9 !important;
+    border-color: #d49af9 !important;
+}
+
+.btn-primary.btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #d9d9d9;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-primary.btn-outline:focus,
+.btn-primary.btn-outline:active {
+    background: #ca82f8;
+    color: var(--fourth-color);
+}
+
+/* Start header */
+
+.navbar {
+    padding: 2em 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    margin: 0 auto;
+}
+
+header .Ashraf-navbar-brand .Ashraf-logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding: 7px;
+    border: 1px solid var(--first-color);
+    display: block;
+    text-align: center;
+    background: var(--first-color);
+}
+
+header .Ashraf-navbar-brand .Ashraf-logo span {
+    display: block;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: var(--fourth-color);
+}
+
+header .Ashraf-navbar-brand .Ashraf-logo:hover {
+    text-decoration: none !important;
+}
+
+header .Ashraf-navbar-brand .Ashraf-logo:active,
+header .Ashraf-navbar-brand .Ashraf-logo:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+/* Start Navbar */
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .logo:hover {
+    color: var(--third-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+/* End Navbar */
+
+
+/* End header */
+
+/* Start about */
+.about {
+    padding: 10em 0;
+    clear: both;
+    position: relative;
+}
+
+
+.about .about-img {
+    width: 100%;
+}
+
+.about-desc {
+    padding-top: 7em;
+}
+
+.about-desc h2 {
+    line-height: 1.3;
+}
+
+.about-desc h2 span {
+    display: block;
+    margin-bottom: 0;
+    color: var(--first-color);
+    font-size: 50px;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.about-desc .desc {
+    padding-left: 6em;
+    position: relative;
+    color: var(--second-color);
+}
+
+.about-desc .rotate {
+    position: absolute;
+    top: 7px;
+    left: 30px;
+}
+
+.rotate .heading {
+    font-family: "Karla", Arial, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: left top 0;
+    -moz-transform-origin: left top 0;
+    -ms-transform-origin: left top 0;
+    -o-transform-origin: left top 0;
+    transform-origin: left top 0;
+    position: relative;
+}
+
+.rotate .heading:after {
+    position: absolute;
+    top: 8px;
+    /* right: -40px; */
+    content: '';
+    background: var(--first-color);
+    width: 40px;
+    height: 1px;
+
+}
+
+/* Start skills */
+
+/* .skills {
+    margin: 120px 0;
+} */
+
+.my-skills span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.skills img {
+    width: 70%;
+}
+
+.skills .heading {
+    top: 120px;
+}
+
+.my-skills ul li {
+    list-style: inside;
+    color: var(--second-color);
+    margin-bottom: 10px;
+}
+
+/* End skills */
+
+/* Start experience */
+
+.experience span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.experience p {
+    color: var(--third-color);
+    font-size: 1.2em;
+}
+
+.experience img {
+
+    width: 90%;
+    height: auto;
+}
+
+.experience .heading {
+    top: 80px;
+}
+
+.gallery-card {
+    padding: 10em 0;
+}
+
+.card-wrapper {
+    max-width: 90%;
+    margin: 0 50px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+
+}
+
+
+.gallery-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-list .card-image {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-wrapper .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background-color: var(--second-color);
+}
+
+.card-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button {
+    color: var(--first-color);
+    margin-top: -35px;
+}
+
+/* Start interests */
+
+/* .skills {
+    margin: 120px 0;
+} */
+
+.my-interests span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: var(--second-color);
+    font-weight: 600;
+}
+
+.interests img {
+    width: 100%;
+}
+
+.interests .heading {
+    top: 120px;
+}
+
+.my-interests ul li {
+    list-style: inside;
+    color: var(--second-color);
+    margin-bottom: 10px;
+}
+
+/* End interests */
+
+
+footer {
+    padding-top: 5em;
+    color: var(--first-color);
+}
+
+
+/**********************
+RESPONSIVE
+***********************/
+@media only screen and (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .about {
+        padding-bottom: 0;
+    }
+
+    .about-desc {
+        padding-top: 0;
+    }
+
+    .about-desc .desc {
+        padding-left: 3em;
+    }
+
+    .skills .title h1 {
+        font-size: 2rem;
+    }
+
+    .bold {
+        font-size: 150px;
+    }
+
+    .skills img {
+        width: 100%;
+    }
+
+    .skills .rotate {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 0 10px;
+
+    }
+
+    .bold {
+        font-size: 60px;
+        margin-top: 75px;
+    }
+
+    header {
+        padding: 2em 0;
+    }
+
+    header .Ashraf-navbar-brand {
+        margin: 10px auto;
+    }
+
+    header .container .navbar-nav {
+        width: 100%;
+        padding: inherit;
+        align-items: center;
+        flex-flow: row;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .landing,
+    .skills .skills-child {
+        text-align: center;
+    }
+
+    .skills .skills-child .title {
+        margin: 20px 0;
+        text-align: center !important;
+    }
+
+    .skills .skills-child {
+        margin-top: 0px;
+    }
+
+    .skills img,
+    .experience img {
+        display: none;
+    }
+
+    .card-wrapper {
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+
+    .card-list .card-image {
+        width: 180px;
+    }
+
+    .issue-visa {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .info {
+        position: static !important;
+        margin: 40px 0 0 !important;
+        padding: 15px 10px !important;
+    }
+
+}
