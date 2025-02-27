@@ -44,7 +44,8 @@ h6 {
 .about,
 .skills,
 .experience,
-.gallery {
+.gallery,
+.interests {
     padding: 10em 0 0;
     clear: both;
     position: relative;
@@ -61,7 +62,7 @@ a {
     left: 0;
     right: 0;
     font-size: 250px;
-    color: rgba(240, 240, 240, 0.01);
+    color: rgba(240, 240, 240, 0.15);
     font-weight: 700;
     z-index: -1;
 }
@@ -316,7 +317,7 @@ header .Ashraf-navbar-brand .Ashraf-logo:focus {
 }
 
 .gallery-card {
-    padding: 10em 0;
+    padding: 10em 0 0;
 }
 
 .card-wrapper {
@@ -358,9 +359,6 @@ header .Ashraf-navbar-brand .Ashraf-logo:focus {
 
 /* Start interests */
 
-/* .skills {
-    margin: 120px 0;
-} */
 
 .my-interests span {
     display: block;
@@ -385,6 +383,7 @@ header .Ashraf-navbar-brand .Ashraf-logo:focus {
     color: var(--second-color);
     margin-bottom: 10px;
 }
+
 
 /* End interests */
 
@@ -475,7 +474,8 @@ RESPONSIVE
     }
 
     .skills img,
-    .experience img {
+    .experience img,
+    .interests img {
         display: none;
     }
 
@@ -490,17 +490,6 @@ RESPONSIVE
     .card-list .card-image {
         width: 180px;
     }
-
-    .issue-visa {
-        margin-top: 40px;
-    }
 }
 
-@media only screen and (max-width: 479px) {
-    .info {
-        position: static !important;
-        margin: 40px 0 0 !important;
-        padding: 15px 10px !important;
-    }
-
-}
+@media only screen and (max-width: 479px) {}
